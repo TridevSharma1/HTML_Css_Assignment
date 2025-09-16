@@ -1,0 +1,112 @@
+/* Reset and basic styling */
+body, h1, p, ul, li {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Poppins', sans-serif;
+      }
+      
+      .container {
+          margin: 40px auto 30px;
+          background-image: url(./assets/bg.png);
+          width: 1200px;
+          height: 1000px;
+          position: relative;
+      }
+      
+      /* Navbar styling */
+      .navbar {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: black;
+          padding: 15px 50px;
+      }
+      
+      .logo-container {
+          display: flex;
+          align-items: center;
+      }
+      
+      .logo {
+          width: 50px;
+          height: 20px;
+      }
+      
+      .grow-list {
+          flex-grow: 1;
+      }
+      
+      .list {
+          display: flex;
+          justify-content: center;
+          list-style-type: none;
+          gap: 30px;
+      }
+      
+      .list-item {
+          font-size: 15px;
+          font-weight: bold;
+          color: aliceblue;
+      }
+      
+      .list-item a {
+          color: aliceblue;
+          text-decoration: none;
+      }
+      
+      .list-item a:hover {
+          text-decoration: underline;
+      }
+      
+      .button-container {
+          display: flex;
+          align-items: center;
+      }
+      
+      .button-small {
+          border-radius: 5px;
+          background-color: purple;
+          color: #ffffff;
+          height: 30px;
+          width: 120px;
+          border: none;
+          cursor: pointer;
+      }
+      
+      .button-small:hover {
+          background-color: #7a2da8;
+      }
+      
+      /* Hero section styling */
+      .hero {
+          margin-top: 150px;
+          text-align: center;
+          color: aliceblue;
+      }
+      
+      .hero-heading {
+          font-size: 80px;
+          margin: 0 250px;
+      }
+      
+      .hero-description {
+          font-size: 20px;
+          margin: 20px 0;
+      }
+      
+      .button-large {
+          width: 280px;
+          height: 50px;
+          background-color: purple;
+          border: none;
+          border-radius: 9px;
+          color: aliceblue;
+          font-size: 25px;
+          cursor: pointer;
+      }
+      
+      .button-large:hover {
+          background-color: #7a2da8;
+      }
+      

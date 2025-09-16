@@ -1,0 +1,685 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.first-page{
+    background-color: #242B2E;
+}
+
+.first-page .nav{
+    height: 70px;
+    /* background-color: #242B2E; */
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    justify-content: center;
+    /* color: white; */
+}
+
+.first-page .nav .boot p a{
+    text-decoration: none;
+    color: whitesmoke;
+
+
+}
+
+.first-page .nav .home{
+    margin-left: 700px;
+
+}
+
+.first-page .nav .home .list{
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    /* text-decoration: none; */
+    /* color: aliceblue; */
+}
+
+.first-page .nav .home .list li a{
+        text-decoration: none;
+        color: aliceblue;
+
+}
+
+/* main part  */
+
+.first-page .main-part{
+    margin-top: 50px;
+    display: flex;
+height: 400px;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 20px;
+}
+
+.first-page .main-part .header p{
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+}
+
+.first-page .main-part .para p{
+    font-size: 15px;
+    margin-top: 5px;
+    color: whitesmoke;
+
+}
+
+.first-page .main-part .btn-part{
+    display: flex;
+    gap: 20px;
+}
+
+.first-page .main-part .btn-part .btn-1 button{
+    width: 120px;
+    height: 50px;
+    color: white;
+background-color: blue;
+border: none;
+}
+
+
+.first-page .main-part .btn-part .btn-2 button{
+    width: 120px;
+    height: 50px;
+    border: none;
+    color: white;
+    border: 1px solid whitesmoke;
+    background-color:#242B2E ;
+
+}
+
+/* second page  */
+.second-page{
+    background-color: white;
+    color: #242B2E;
+    height: 300px;
+}
+
+.second-page .review{
+    display: flex;
+    margin-top: 60px;
+    gap: 50px;
+    margin-left: 130px;
+
+}
+
+.second-page .review .first{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 200px;
+    /* border: 2px solid red; */
+    gap: 20px;
+}
+
+.second-page .review .first .para p{
+    margin-top: 5px;
+    color: #242B2E;
+}
+
+
+.second-page .review .first .call{
+    display: flex;
+    gap: 10px;
+}
+
+
+
+.second-page .review .second{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 200px;
+    /* border: 2px solid red; */
+    gap: 20px;
+}
+
+
+
+.second-page .review .second .para p{
+    margin-top: 5px;
+    color: #242B2E;
+}
+
+
+.second-page .review .second .call{
+    display: flex;
+    gap: 10px;
+}
+
+
+
+
+.second-page .review .third{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 200px;
+    /* border: 2px solid red; */
+    gap: 20px;
+}
+
+
+
+.second-page .review .third .para p{
+    margin-top: 5px;
+    color: #242B2E;
+}
+
+
+.second-page .review .third .call{
+    display: flex;
+    gap: 10px;
+}
+
+/* lining part  */
+.second-page .line{
+    margin-top: 100px;
+    width: 1300px;
+    height: 2px;
+    background-color: gray;
+}
+
+/* third page  */
+.third-page{
+    background-color: white;
+    height: 620px;
+
+}
+
+.third-page .title{
+    margin-top: 80px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    /* background-color: darkslategrey; */
+}
+
+.third-page .title h1{
+    font-size: 30px;
+    font-weight: bold;
+
+
+}
+
+.third-page .title p{
+    color: grey;
+    font-size: 20px;
+}
+
+
+/* main-part  */
+.third-page .main-part{
+    display: flex;
+    margin-top: 30px;
+    gap: 70px;
+    margin-left: 150px;
+
+}
+
+.third-page .main-part .first{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 415px;
+    /* border: 2px solid red; */
+    background-color: whitesmoke;
+    gap: 10px;
+}
+
+.third-page .main-part .first .free p{
+    color: gray;
+    font-size: 15px;
+        margin-top: 40px;
+        font-weight: bold;
+        margin-left: 40px;
+
+
+}
+
+.third-page .main-part .first .dollor{
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+    margin-left: 40px;
+
+}
+
+.third-page .main-part .first .dollor h3{
+    color: gray;
+    /* margin-top: 20px; */
+}
+
+.third-page .main-part .first .dollor h3:nth-child(1){
+    font-size: 40px;
+    color: black;
+}
+
+.third-page .main-part .first .dollor h3:nth-child(2){
+    margin-top: 10px;
+}
+
+
+
+.third-page .main-part .first .users p{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 40px;
+
+}
+
+.third-page .main-part .first p{
+    color: grey;
+    font-size: 15px;
+    margin-left: 40px;
+
+}
+
+.third-page .main-part .first .btn button{
+    color: blue;
+    width: 160px;
+    height: 40px;
+    border: 1px solid blue;
+    border-radius: 2px;
+    margin-left: 40px;
+
+}
+
+.third-page .main-part .first .btn button:hover{
+    color:white ;
+    background-color: blue;
+}
+
+
+/* second box  */
+
+.third-page .main-part .second{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 415px;
+    /* border: 2px solid red; */
+    gap: 10px;
+    background-color: whitesmoke;
+}
+
+
+.third-page .main-part .second .free p{
+    color: gray;
+    font-size: 15px;
+        margin-top: 40px;
+        font-weight: bold;
+        margin-left: 40px;
+
+
+}
+
+
+.third-page .main-part .second .dollor{
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+    margin-left: 40px;
+
+}
+
+.third-page .main-part .second .dollor h3{
+    color: gray;
+    /* margin-top: 20px; */
+}
+
+.third-page .main-part .second .dollor h3:nth-child(1){
+    font-size: 40px;
+    color: black;
+}
+
+.third-page .main-part .second .dollor h3:nth-child(2){
+    margin-top: 10px;
+}
+
+.third-page .main-part .second .users p{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 40px;
+
+}
+
+.third-page .main-part .second p{
+    color: grey;
+    font-size: 15px;
+    margin-left: 40px;
+
+}
+
+.third-page .main-part .second .btn button{
+    color:white;
+    width: 160px;
+    height: 40px;
+    /* border: 1px solid blue; */
+    border-radius: 2px;
+    background-color: blue;
+    border: none;
+    margin-left: 40px;
+
+}
+
+
+/* third box  */
+
+.third-page .main-part .third{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 415px;
+    /* border: 2px solid red; */
+    background-color: whitesmoke;
+
+    gap: 10px;
+}
+
+
+.third-page .main-part .third .free p{
+    color: gray;
+    font-size: 15px;
+        margin-top: 40px;
+        font-weight: bold;
+        margin-left: 40px;
+
+
+}
+
+.third-page .main-part .third .dollor{
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+    margin-left: 40px;
+
+}
+
+.third-page .main-part .third .dollor h3{
+    color: gray;
+    /* margin-top: 20px; */
+}
+
+.third-page .main-part .third .dollor h3:nth-child(1){
+    font-size: 40px;
+    color: black;
+}
+
+.third-page .main-part .third .dollor h3:nth-child(2){
+    margin-top: 10px;
+}
+
+
+.third-page .main-part .third .users p{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 40px;
+
+}
+
+.third-page .main-part .third p{
+    color: grey;
+    font-size: 15px;
+    margin-left: 40px;
+
+}
+
+.third-page .main-part .third .btn button{
+    color: blue;
+    width: 160px;
+    height: 40px;
+    border: 1px solid blue;
+    border-radius: 2px;
+    margin-left: 40px;
+}
+
+
+.third-page .main-part .third .btn button:hover{
+    color:white ;
+    background-color: blue;
+}
+
+/* lining part  */
+.third-page .line{
+    margin-top: 80px;
+    width: 1300px;
+    height: 2px;
+    background-color: gray;
+}
+
+/* fourth page  */
+
+.fourth-page{
+    background-color: white;
+    height: 590px;
+
+}
+
+.fourth-page .nav{
+    height: 80px;
+    /* background-color: cadetblue; */
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.fourth-page .nav p:nth-child(1){
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.fourth-page .nav p:nth-child(2){
+    color: grey;
+    font-size: 20px;
+}
+
+.fourth-page .message{
+    margin-top: 20px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.fourth-page .message .message-1{
+    width: 400px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid grey;
+}
+
+.fourth-page .message .message-1 .para p{
+    color: grey;
+    font-size: 16px;
+    gap: 9px;
+}
+
+.fourth-page .message .message-1 .name p{
+    color: #242B2E;
+    font-size: 13px;
+
+}
+
+
+
+.fourth-page .message .message-2{
+    width: 400px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid grey;
+
+}
+
+
+.fourth-page .message .message-2 .para p{
+    color: grey;
+    font-size: 16px;
+    gap: 9px;
+}
+
+.fourth-page .message .message-2 .name p{
+    color: #242B2E;
+    font-size: 13px;
+}
+
+/* lining part  */
+.fourth-page .line{
+    margin-top: 80px;
+    width: 1300px;
+    height: 2px;
+    background-color: grey;
+}
+
+/* fifth page  */
+
+.fifth-page{
+    background-color: white;
+
+}
+
+
+
+
+.fifth-page .nav{
+    height: 70px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    /* background-color: darkcyan; */
+}
+
+.fifth-page .nav p:nth-child(1){
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.fifth-page .nav p:nth-child(2){
+    color: grey;
+    font-size: 20px;
+}
+
+.fifth-page .document{
+    margin-top: 50px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* gap: 20px; */
+    /* background-color: darkcyan; */
+
+}
+
+.fifth-page .document .documentation{
+    width: 360px;
+    height: 380px;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* gap: 20px; */
+}
+
+.fifth-page .document .documentation .form-group input{
+    width: 350px;
+    height: 50px;
+    color: grey;
+    gap: 20px;
+    border-radius: 10px;
+    border: none;
+
+}
+
+.fifth-page .document .documentation .form-group textarea{
+    
+     margin-top: 15px;
+     background-color: whitesmoke;
+     
+ }
+
+ .fifth-page .document .documentation .form-group input:nth-child(1){
+    margin-top: 15px;
+    /* border-radius: 10px; */
+    background-color: whitesmoke;
+ }
+
+
+ .fifth-page .document .documentation .form-group input:nth-child(2){
+    margin-top: 15px;
+    /* border-radius: 10px; */
+    background-color: whitesmoke;
+
+ }
+
+ .fifth-page .document .documentation .form-group input:nth-child(3){
+    margin-top: 15px;
+    /* border-radius: 10px; */
+    background-color: whitesmoke;
+ }
+
+
+ 
+ .fifth-page .document .documentation .form-group input:nth-child(5){
+     background-color: blue;
+     color: white;
+     border: none;
+     margin-top: 20px;
+
+ }
+
+ .fifth-page .last{
+    height: 100px;
+    /* color:#242B2E; */
+    background-color:#242B2E;
+    color:whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .fifth-page .last p{
+    font-size: 20px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
