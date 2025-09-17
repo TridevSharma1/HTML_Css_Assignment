@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    .navbar {
+      display: flex;
+      justify-content: flex-start;
+      margin-left: 170px;
+    }
+
+    .menu {
+      display: flex;
+      gap: 40px;
+    }
+
+    ul li {
+      list-style: none;
+    }
+
+    ul li a {
+      text-decoration: none;
+      color: gray;
+    }
+
+    nav button {
+      height: 45px;
+      width: 150px;
+      background-color: blueviolet;
+      color: white;
+      border-radius: 12px;
+      border: none;
+      margin-left: 200px;
+    }
+
+    .navbar img {
+      height: 40px;
+      width: 100px;
+    }
+
+    .main_container {
+      display: flex;
+      margin-left: 170px;
+      margin-top: 40px;
+      gap: 10px;
+    }
+
+    .right_side img {
+      height: 400px;
+      width: 700px;
+    }
+
+    .left_side {
+      /* border: 5px solid red; */
+      width: 350px;
+      /* display: flex; */
+      /* flex-direction: column; */
+    }
+
+    .heading p {
+      font-size: 40px;
+      font-weight: bolder;
+      color: blueviolet;
+    }
+
+    span {
+      color: royalblue;
+    }
+
+    .description p {
+      color: gray;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    
+
+    .left_side button {
+      height: 40px;
+      width: 130px;
+      color: whitesmoke;
+      background-color: blueviolet;
+      border: none;
+      font-size: 12px;
+      font-weight: bold;
+      margin-right: 200px;
+      border-radius: 12px;
+    }
+
+   
+  </style>
+
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <a href="home.html"><img src="./assets/Logo.png" alt="logo.png" /></a>
+
+        <ul class="menu">
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Service</a></li>
+          <li><a href="">Portfolio</a></li>
+          <li><a href="">Pricing</a></li>
+        </ul>
+
+        <button>Contact Us</button>
+      </nav>
+
+      <main class="main_container">
+        <div class="left_side">
+          <div class="heading">
+            <p>We Help You</p>
+            <p><span>Crush</span> Your</p>
+            <p>Competition</p>
+          </div>
+
+          <div class="description">
+            <p>Build trust to connect your bond to billon of</p>
+            <p>Users and grow your revnue through SEO</p>
+          </div>
+
+          <button class="btn">See our services</button>
+        </div>
+
+        <div class="right_side">
+          <img src="./assets/Header Illustration.png" alt="" />
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
