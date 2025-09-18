@@ -50,7 +50,7 @@
       border-radius: 10px;
       margin-left: 100px;}
       
-      .main_section {
+      .main_section1 {
       display: flex;
       margin-left: 170px;
       margin-top: 40px;
@@ -68,25 +68,49 @@
       border-color: gray;
       font-size: 10px;
       font-weight: bold;
-      margin-right: 200px;
+      margin-right: 100px;
       border-radius: 15px;
     }
      .Button_no_1 button {
       height: 40px;
       width: 130px;
-      color: rgb(255, 255, 255);
-      background-color: rgb(0, 0, 0);
+      color: rgb(135, 119, 119);
+      background-color: rgb(255, 255, 255);
       border-color: gray;
       font-size: 10px;
       font-weight: bold;
       margin-right: 200px;
-      border-radius: 15px; }
-
+      border-radius: 15px;
+     display: flex;
+      font: bold; }
 
      .description p {
       color: gray;
       font-size: 15px;
       font-weight: bold;
+    }
+    .left_side :nth-child(1) {
+      height: 500px;
+      width: 400px;
+      position: absolute;
+      margin-left: 0px;
+      z-index: 3;
+      border-radius: 10px;
+    }
+    .left_side :nth-child(2) {
+      height: 300px;
+      width: 250px;
+      position: absolute;
+      z-index: 2;
+      margin-left: 200px;
+      margin-top: 230px;
+    }
+    
+    .right_side{
+     margin-left: 500px;
+     margin-top: 150px;
+
+
     }
       </style>
     
@@ -107,9 +131,18 @@
         <button>SEARCH</button>
       </nav>
       
-       <main class="main_section">
-        <div class="right_side">
+       <main class="main_section1">
+       
+
+        <div class="left_side">
+          <img src="./Image.png" alt="" />
+          <img src="./squares.png" alt="" />
+          </div>
+
+          <div class="right_side">
           <div class="heading">
+            <img src="./globe.png" alt="" />
+            <img src="./start.png" alt="" />
             <h1>What's Trend In 2025 ?</h1>
           </div>
 
@@ -118,15 +151,13 @@
             <p>cididunt ut labore et dolore magna aliqua. ut enim ad minim veniam,quis nostrud</p>
             <P>exercitation ullamco laboris nisi ut</P> 
         </div>
-
+        <div class="Button_no_1">
           <button class="btn">EMAIL ADDRESS</button>
-          <div class="Button_no_1">
-           <button class="btn">Join Now</button>
+          <button class="btn">Join Now</button>
         </div>
-
-        <div class="left_side">
-          <img src="./Image.png" alt="" />
-        
-        
+        </div>
+        </main>
+        </nav>
+        </body>
 </body>
 </html>
