@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    .main ul li {
+      font-size: 30px;
+      list-style: none;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    p {
+      border: 5px solid black;
+      width: 500px;
+      height: 300px;
+      text-align: center;
+      font-size: 30px;
+      background-color: black;
+      color: whitesmoke;
+    }
+
+    .containerr {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    img {
+      height: 400px;
+      width: 600px;
+    }
+
+    @media (max-width: 600px) {
+      ul li {
+        color: red;
+      }
+
+      .main ul li {
+        font-size: 12px;
+      }
+
+      img {
+        height: 200px;
+        width: 300px;
+      }
+    }
+  </style>
+
+  <!-- bootstrap  -->
+
+  <body>
+    <div class="main">
+      <ul class="menu">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Service</li>
+      </ul>
+    </div>
+
+    <div class="image">
+      <img src="./images/car-2.jpeg" alt="" />
+    </div>
+
+    <div class="containerr">
+      <p>First</p>
+      <p>Second</p>
+      <p>Third</p>
+      <p>Fourth</p>
+      <p>Fifth</p>
+      <!-- <p>Sixth</p>
+      <p>Seventh</p>
+      <p>Eighth</p>
+      <p>Ninth</p>
+      <p>Tenth</p>
+      <p>Eleventh</p>
+      <p>Twelfth</p> -->
+    </div>
+  </body>
+</html>
+
+<!-- what is media query ?  -->
+<!-- => using media query we can make our website responsive -->
+
+—----------------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    .card :nth-child(1) {
+      height: 200px;
+      width: 300px;
+      position: absolute;
+      margin-left: 100px;
+      z-index: 3;
+      border-radius: 10px;
+    }
+
+    .card :nth-child(2) {
+      height: 150px;
+      width: 250px;
+      position: absolute;
+      z-index: 2;
+    }
+  </style>
+
+  <body>
+    <div class="card">
+      <img src="./images/car-2.jpeg" alt="" />
+      <img src="./images/car.jpeg" alt="" />
+      <h2>Car</h2>
+      <p>This is car</p>
+    </div>
+  </body>
+</html>

@@ -15,16 +15,19 @@
 
     .menu {
       display: flex;
-      gap: 40px;
+      gap: 50px;
+      font: bold;
     }
 
     ul li {
       list-style: none;
+      
     }
 
     ul li a {
       text-decoration: none;
       color: rgb(0, 0, 0);
+      font-weight: bold;
     }
 
     .navbar img {
@@ -35,23 +38,22 @@
     .main_container {
       display: flex;
       margin-left: 170px;
-      margin-top: 40px;
-      gap: 10px;
+      margin-top: 20px;
+      gap: 1px;
     }
 
-    .right_side img {
-      height: 400px;
-      width: 700px;
-    }
+   
 
     .left_side {
-      width: 350px;
+      width: 500px;
+      margin-top: 200px;
     }
 
     .heading p {
       font-size: 40px;
       font-weight: bolder;
       color: rgb(0, 0, 0);
+      gap: 10px;
     }
 
     span {
@@ -77,19 +79,36 @@
       margin-right: 200px;
       border-radius: 12px;
     }
-
+    .right_side :nth-child(1){
+      height: 250px;
+      width: 250px;
+      margin-left: 250px;
+      margin-top: 50px;
+    }
+    .right_side :nth-child(2){
+      height: 300px;
+      width: 250px;
+      margin-left: 15px;
+      margin-top: 50px;
+    }
+    .right_side :nth-child(3){
+      height: 250px;
+      width: 500px;
+      margin-left: 250px;
+      margin-top: 10px;
+    }
    
   </style>
 
   <body>
     <div class="container">
       <nav class="navbar">
-        
+        <a href="home.html"><img src="./images/logo.png" alt="logo.png" /></a>
 
         <ul class="menu">
           <li><a href="">BLOG</a></li>
           <li><a href="">CALM PlAYLIST</a></li>
-          <li><a href="">JOIN CaLM</a></li>
+          <li><a href="">JOIN CALM</a></li>
         </ul>
 
       </nav>
