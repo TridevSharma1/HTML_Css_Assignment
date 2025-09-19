@@ -1,163 +1,173 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Free Shop</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Shop</title>
 </head>
 <style>
-.navbar {
-      display: flex;
-      height: 60px;
-      
-      padding-top: 20px;
-      background-color: rgb(255, 255, 255);
-    }
+  .navbar {
+    display: flex;
+    height: 60px;
+
+    padding-top: 20px;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .menu {
+    display: flex;
+    gap: 60px;
+
+  }
+
+  ul li {
+    list-style: none;
+
+  }
+
+  ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    font-style: italic;
+  }
+
+  .navbar button {
+    width: 120px;
+    height: 40px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 12px;
+    border-color: rgb(0, 0, 0);
+    margin-left: 290px;
+    color: rgb(142, 130, 130);
+    font-weight: bold;
+  }
+
+  .navbar img {
+    height: 50px;
+    width: 70px;
+    border-radius: 10px;
+    margin-left: 100px;
+  }
+
+  .main_section1 {
+    display: flex;
+    margin-left: 170px;
+    margin-top: 40px;
+    gap: 10px;
+  }
+
+  .left_side img {
+    height: 400px;
+    width: 700px;
+  }
+
+  .btn {
+    height: 40px;
+    width: 130px;
+    color: rgb(168, 157, 157);
+    background-color: rgb(255, 255, 255);
+    border-color: gray;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 200px;
+    border-radius: 15px;
+    font-weight: bold;
+  }
+  .btn1 {
+    height: 40px;
+    width: 130px;
+    color: rgb(249, 249, 249);
+    background-color: rgb(0, 0, 0);
+    border-color: gray;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 200px;
+    border-radius: 15px;
+    font-weight: bold;
+  }
+
+  .description p {
+    color: gray;
+    font-size: 15px;
+    font-weight: bold;
     
-    .menu {
-      display: flex;
-      gap: 60px;
-      
-    }
+  }
 
-    ul li {
-      list-style: none;
-      
-    }
+  .left_side :nth-child(1) {
+    height: 500px;
+    width: 400px;
+    position: absolute;
+    margin-left: 0px;
+    z-index: 3;
+    border-radius: 10px;
+  }
 
-    ul li a {
-      text-decoration: none;
-      color: rgb(0, 0, 0);
-     font-weight: bolder;
-      font-style: italic;
-    }
+  .left_side :nth-child(2) {
+    height: 300px;
+    width: 250px;
+    position: absolute;
+    z-index: 2;
+    margin-left: 200px;
+    margin-top: 250px;
+  }
 
-    .navbar button {
-      width: 120px;
-      height: 40px;
-      background-color: rgb(247, 247, 247);
-      border-radius: 12px;
-      border-color: rgb(0, 0, 0);
-      margin-left: 290px;
-      color: rgb(104, 102, 102);
-      font-weight: bold;
-    }
+  .right_side {
+    margin-left: 500px;
+    margin-top: 150px;
+  }
+</style>
 
-    .navbar img {
-      height: 50px;
-      width: 70px;
-      border-radius: 10px;
-      margin-left: 100px;}
-      
-      .main_section1 {
-      display: flex;
-      margin-left: 170px;
-      margin-top: 40px;
-      gap: 10px;
-    }
-     .left_side img {
-      height: 400px;
-      width: 700px;
-    }
-    .right_side button {
-      height: 40px;
-      width: 130px;
-      color: rgb(118, 113, 113);
-      background-color: rgb(255, 255, 255);
-      border-color: gray;
-      font-size: 10px;
-      font-weight: bold;
-      margin-right: 100px;
-      border-radius: 15px;
-    }
-     .Button_no_1 button {
-      height: 40px;
-      width: 130px;
-      color: rgb(135, 119, 119);
-      background-color: rgb(255, 255, 255);
-      border-color: gray;
-      font-size: 10px;
-      font-weight: bold;
-      margin-right: 200px;
-      border-radius: 15px;
-     display: flex;
-      font: bold; }
-
-     .description p {
-      color: gray;
-      font-size: 15px;
-      font-weight: bold;
-    }
-    .left_side :nth-child(1) {
-      height: 500px;
-      width: 400px;
-      position: absolute;
-      margin-left: 0px;
-      z-index: 3;
-      border-radius: 10px;
-    }
-    .left_side :nth-child(2) {
-      height: 300px;
-      width: 250px;
-      position: absolute;
-      z-index: 2;
-      margin-left: 200px;
-      margin-top: 230px;
-    }
-    
-    .right_side{
-     margin-left: 500px;
-     margin-top: 150px;
-
-
-    }
-      </style>
-    
 <body>
-     <div class="container">
-      <nav class="navbar">
-        <a href=""><img src="./Logo.png" alt="" /></a>
+  <div class="container">
+    <nav class="navbar">
+      <a href=""><img src="./Logo.png" alt="" /></a>
 
-        <ul class="menu">
-          <li><a href="">HOME</a></li>
-          <li><a href="">FEMALE</a></li>
-          <li><a href="">MALE</a></li>
-          <li><a href="">FAQ</a></li>
-          <li><a href="">ABOUT</a></li>
-        </ul>
-        
+      <ul class="menu">
+        <li><a href="">HOME</a></li>
+        <li><a href="">FEMALE</a></li>
+        <li><a href="">MALE</a></li>
+        <li><a href="">FAQ</a></li>
+        <li><a href="">ABOUT</a></li>
+      </ul>
 
-        <button>SEARCH</button>
-      </nav>
-      
-       <main class="main_section1">
-       
 
-        <div class="left_side">
-          <img src="./Image.png" alt="" />
-          <img src="./squares.png" alt="" />
-          </div>
+      <button>SEARCH</button>
+    </nav>
 
-          <div class="right_side">
-          <div class="heading">
-            <img src="./globe.png" alt="" />
-            <img src="./start.png" alt="" />
-            <h1>What's Trend In 2025 ?</h1>
-          </div>
+    <main class="main_section1">
 
-          <div class="description">
-            <p>Lorem ipsum dolor sit amet,consecetetur adipiscing elit, sed do eiusmod tempor in- </p>
-            <p>cididunt ut labore et dolore magna aliqua. ut enim ad minim veniam,quis nostrud</p>
-            <P>exercitation ullamco laboris nisi ut</P> 
+
+      <div class="left_side">
+        <img src="./Image.png" alt="" />
+        <img src="./squares.png" alt="" />
+      </div>
+
+      <div class="right_side">
+        <div class="Image_2">
+          <img src="./globe.png" alt="" />
+          <img src="./start.png" alt="" />
         </div>
+        <div class="heading">
+
+          <h1>What's Trend In 2025 ?</h1>
+        </div>
+
+        <div class="description">
+          <p>Lorem ipsum dolor sit amet,consecetetur adipiscing elit, sed do eiusmod tempor in- </p>
+          <p>cididunt ut labore et dolore magna aliqua. ut enim ad minim veniam,quis nostrud</p>
+          <P>exercitation ullamco laboris nisi ut</P>
+        </div>
+
         <div class="Button_no_1">
           <button class="btn">EMAIL ADDRESS</button>
-          <button class="btn">Join Now</button>
+          <button class="btn1">Join Now</button>
         </div>
-        </div>
-        </main>
-        </nav>
-        </body>
+      </div>
+    </main>
+    </nav>
 </body>
+</body>
+
 </html>
