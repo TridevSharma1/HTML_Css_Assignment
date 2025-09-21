@@ -4,35 +4,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Free Shop</title>
+  <title>Document</title>
 </head>
 <style>
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+  }
+
   .navbar {
     display: flex;
-    height: 60px;
-
-    padding-top: 20px;
-    background-color: rgb(255, 255, 255);
+    justify-content: flex-start;
+    margin-left: 170px;
   }
 
-  .menu {
-    display: flex;
-    gap: 60px;
 
-  }
+  /* .menu {
+        display: flex;
+        gap: 40px;
+    } */
 
   ul li {
     list-style: none;
-
+    font-family: 'Times New Roman', Times, serif;
+    font: bold;
   }
 
   ul li a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-weight: bolder;
-    font-style: italic;
+    color: black;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
+  .menu {
+    display: flex;
+    gap: 40px;
+    margin-left: 400px;
+  }
+
+  .left-side {
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  /* .search-box {
+        display: flex;
+        align-items: center;
+        margin-left: 90px;
+        width: 100px;
+        height: 20px;
+        border: 3.5px solid black;
+        border-radius: 10px;
+        padding: 5px 10px;
+    } */
   .navbar button {
     width: 120px;
     height: 40px;
@@ -44,137 +75,137 @@
     font-weight: bold;
   }
 
-  .navbar img {
-    height: 50px;
-    width: 70px;
-    border-radius: 10px;
-    margin-left: 100px;
-  }
+  /* .button {
+        border: none;
+        outline: none;
+        padding: 5px 10px;
+        font-size: 14px;
+    } */
 
-  .main_section1 {
+  .main_section {
     display: flex;
     margin-left: 170px;
-    margin-top: 40px;
+    margin-top: 60px;
     gap: 10px;
   }
 
-  .left_side img {
-    height: 400px;
-    width: 700px;
-  }
-  .heading {
-    margin-left: 250px;
-    font-weight: bolder;
-    margin-bottom: 0px;
-
-  }
-
-  .btn {
-    height: 40px;
-    width: 130px;
-    color: rgb(168, 157, 157);
-    background-color: rgb(255, 255, 255);
-    border-color: gray;
-    font-size: 12px;
-    font-weight: bold;
-    margin-left: 260px;
-    border-radius: 15px;
-    font-weight: bold;
-  }
-  .btn1 {
-    height: 40px;
-    width: 130px;
-    color: rgb(249, 249, 249);
-    background-color: rgb(0, 0, 0);
-    border-color: gray;
-    font-size: 12px;
-    font-weight: bold;
-    margin-right: 300px;
-    border-radius: 15px;
-    font-weight: bold;
-  }
-
-  .description p {
-    color: gray;
-    font-size: 15px;
-    font-weight: bold;
-    margin-left: 150px;
-    
-  }
-
-  .left_side :nth-child(1) {
+  .card :nth-child(2) {
+    margin-top: 60px;
     height: 500px;
     width: 400px;
     position: absolute;
-    margin-left: 0px;
     z-index: 3;
-    border-radius: 10px;
   }
 
-  .left_side :nth-child(2) {
-    height: 300px;
-    width: 250px;
+  .card :nth-child(1) {
+    margin-left: 90px;
+    margin-top: 270px;
+    height: 350px;
+    width: 400px;
     position: absolute;
     z-index: 2;
-    margin-left: 200px;
-    margin-top: 250px;
   }
 
-  .right_side {
+  .heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 100px;
     margin-left: 500px;
-    margin-top: 150px;
+
+  }
+
+  .heading h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .heading input {
+    border: 1.5px solid black;
+    padding: 10px 15px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+    gap: 5px;
+  }
+
+  .heading button {
+    padding: 10px 20px;
+    border: none;
+    background: black;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+
+  }
+
+  .icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 </style>
 
 <body>
   <div class="container">
     <nav class="navbar">
-      <a href=""><img src="./Logo.png" alt="" /></a>
-
+      <a href="home.html"><img src="./Logo.png" alt="logo.png" /></a>
       <ul class="menu">
-        <li><a href="">HOME</a></li>
-        <li><a href="">FEMALE</a></li>
-        <li><a href="">MALE</a></li>
+        <li><a href="">Home</a></li>
+        <li><a href="">Female</a></li>
+        <li><a href="">Male</a></li>
         <li><a href="">FAQ</a></li>
-        <li><a href="">ABOUT</a></li>
+        <li><a href="">About</a></li>
       </ul>
 
-
-      <button>SEARCH</button>
+      <!-- <div class="button">
+                <input type="text" placeholder="Search">
+            </div> -->
+      <nav>
+        <button>SEARCH</button>
+      </nav>
     </nav>
 
-    <main class="main_section1">
 
+    <main class="main_section">
+      <div class="card">
+        <img src="./squares.png" alt="squares.png">
+        <img src="./Image.png" alt="image.png">
 
-      <div class="left_side">
-        <img src="./Image.png" alt="" />
-        <img src="./squares.png" alt="" />
       </div>
 
-      <div class="right_side">
-        <div class="Image_2">
-          <img src="./globe.png" alt="" />
-          <img src="./start.png" alt="" />
+      <div class="heading">
+        <img src="./globe.png" alt="globe.png">
+        <img src="./start.png" alt="start.png" style="margin-left: 700px;" height="70px" width="70px">
+        <h1>What's Trend in 2025 ?</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor in-</p>
+        <p>cididunt ut laboreet dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+        <p>exercitation ullamco laboris nisi ut.</p>
+        <div>
+          <input type="email" placeholder="Email Address">
+          <button>JOIN NOW</button>
         </div>
-        <div class="heading">
-
-          <h1>What's Trend In 2025 ?</h1>
-        </div>
-
-        <div class="description">
-          <p>Lorem ipsum dolor sit amet,consecetetur adipiscing elit, sed do eiusmod tempor in- </p>
-          <p>cididunt ut labore et dolore magna aliqua. ut enim ad minim veniam,quis nostrud</p>
-          <P>exercitation ullamco laboris nisi ut</P>
-        </div>
-
-        <div class="Button_no_1">
-          <button class="btn">EMAIL ADDRESS</button>
-          <button class="btn1">Join Now</button>
-        </div>
+        <img src="./start.png" alt="start.png" style="margin-right: 800px;" height="50px" width="50px">
       </div>
+
+
     </main>
-    </nav>
-</body>
+    <footer class="icons">
+
+      <h3>Contact Us</h3>
+      <div class="social-icons">
+        <img src="./Group.png" alt="facbook">
+        <img src="./Group (1).png" alt="massage">
+        <img src="./Group (2).png" alt="instagram">
+        <img src="./Group (3).png" alt="whatsapp">
+      </div>
+    </footer>
+
+
 </body>
 
 </html>
