@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tridev Sharma | CS Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+<!-- AOS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- Font -->
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#020617;
+  --glass:rgba(255,255,255,.07);
+  --border:rgba(255,255,255,.15);
+  --text:#e5e7eb;
+  --muted:#94a3b8;
+  --accent:#38bdf8;
+}
+html{scroll-behavior:smooth}
+body{
+  font-family:'JetBrains Mono',monospace;
+  background:var(--bg);
+  color:var(--text);
+  overflow-x:hidden;
+}
+
+/* BACKGROUND BLOBS */
+.bg-animation{position:fixed;inset:0;z-index:-1}
+.bg-animation span{
+  position:absolute;
+  width:320px;height:320px;
+  background:radial-gradient(circle,var(--accent),transparent 70%);
+  opacity:.15;
+  animation:floatBg 20s infinite alternate ease-in-out;
+}
+.bg-animation span:nth-child(1){top:10%;left:5%}
+.bg-animation span:nth-child(2){top:60%;left:70%;animation-duration:24s}
+.bg-animation span:nth-child(3){top:35%;left:40%;animation-duration:28s}
+@keyframes floatBg{
+  from{transform:translateY(0) scale(1)}
+  to{transform:translateY(-140px) scale(1.4)}
+}
+
+/* NAVBAR */
+.navbar{
+  backdrop-filter:blur(12px);
+  background:rgba(2,6,23,.7);
+}
+.nav-link{
+  color:var(--text)!important;
+  position:relative;
+}
+.nav-link::after{
+  content:"";
+  position:absolute;
+  left:0;bottom:-5px;
+  width:0;height:2px;
+  background:var(--accent);
+  transition:.3s;
+}
+.nav-link:hover::after{width:100%}
+
+/* TS LOGO */
+.ts-logo{
+  position:fixed;
+  left:20px;top:50%;
+  transform:translateY(-50%);
+  font-size:26px;font-weight:800;
+  color:var(--accent);
+  border:2px solid var(--accent);
+  padding:14px 16px;border-radius:14px;
+  z-index:999;
+  box-shadow:0 0 30px rgba(56,189,248,.6);
+  animation:pulseLogo 3s infinite;
+}
+@keyframes pulseLogo{
+  0%{box-shadow:0 0 20px rgba(56,189,248,.4)}
+  50%{box-shadow:0 0 50px rgba(56,189,248,.9)}
+  100%{box-shadow:0 0 20px rgba(56,189,248,.4)}
+}
+
+/* GLASS */
+.glass{
+  background:var(--glass);
+  backdrop-filter:blur(18px);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:30px;
+  transition:.35s;
+}
+.glass:hover{
+  transform:translateY(-10px);
+  border-color:var(--accent);
+}
+
+/* PROFILE */
+.profile-pic{
+  width:160px;height:160px;
+  border-radius:50%;
+  border:4px solid var(--accent);
+  box-shadow:0 0 40px rgba(56,189,248,.6);
+}
+
+/* STATUS BUTTONS */
+.status-wrap{
+  display:flex;justify-content:center;
+  gap:18px;margin-top:25px;
+}
+.status-btn{
+  position:relative;
+  padding:14px 26px;
+  border-radius:999px;
+  color:#fff;font-weight:600;
+  text-decoration:none;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.25);
+  backdrop-filter:blur(12px);
+}
+.status-btn::before{
+  content:"";
+  position:absolute;inset:0;
+  background:linear-gradient(120deg,#38bdf8,#a78bfa,#22d3ee,#38bdf8);
+  background-size:300% 300%;
+  animation:moveGradient 6s linear infinite;
+  z-index:-1;
+}
+@keyframes moveGradient{
+  0%{background-position:0% 50%}
+  100%{background-position:300% 50%}
+}
+.status-btn:hover{transform:translateY(-4px) scale(1.05)}
+.status-btn i{margin-right:8px}
+
+/* PREMIUM DOWNLOAD BUTTON */
+.download-btn{
+  position:relative;
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:16px 36px;
+  font-size:18px;
+  font-weight:700;
+  color:#fff;
+  border-radius:999px;
+  text-decoration:none;
+  overflow:hidden;
+  background:rgba(0,0,0,.2);
+  backdrop-filter:blur(12px);
+  box-shadow:0 0 30px rgba(56,189,248,.6);
+  transition:.3s;
+}
+.download-btn::before{
+  content:"";
+  position:absolute;inset:0;padding:2px;
+  border-radius:999px;
+  background:linear-gradient(120deg,#38bdf8,#a78bfa,#22d3ee,#38bdf8);
+  background-size:300% 300%;
+  animation:borderMove 6s linear infinite;
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+  -webkit-mask-composite:xor;
+          mask-composite:exclude;
+}
+.download-btn::after{
+  content:"";
+  position:absolute;inset:-30%;
+  background:radial-gradient(circle,rgba(56,189,248,.35),transparent 70%);
+  opacity:.6;z-index:-1;
+  animation:pulseGlow 3s infinite;
+}
+@keyframes borderMove{
+  0%{background-position:0% 50%}
+  100%{background-position:300% 50%}
+}
+@keyframes pulseGlow{
+  0%,100%{opacity:.4}
+  50%{opacity:.8}
+}
+.download-btn:hover{
+  transform:translateY(-4px) scale(1.05);
+  box-shadow:0 0 55px rgba(56,189,248,.9);
+}
+.download-btn i{animation:downloadBounce 2s infinite}
+@keyframes downloadBounce{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(6px)}
+}
+
+/* SKILLS */
+.skill{
+  border:1px solid var(--border);
+  padding:8px 14px;
+  border-radius:999px;
+  margin:6px;
+}
+.skill:hover{background:var(--accent);color:#020617}
+
+/* TIMELINE */
+.timeline{
+  border-left:3px dashed var(--accent);
+  padding-left:25px;
+}
+.timeline-item{
+  position:relative;margin-bottom:25px;
+}
+.timeline-item::before{
+  content:"";
+  width:14px;height:14px;
+  background:var(--accent);
+  border-radius:50%;
+  position:absolute;
+  left:-32px;top:6px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="bg-animation"><span></span><span></span><span></span></div>
+<div class="ts-logo">TS</div>
+
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand text-info fw-bold" href="#">TS</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="nav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Tech</a></li>
+        <li class="nav-item"><a class="nav-link" href="#activity">GitHub</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#journey">Journey</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section id="about" class="min-vh-100 d-flex align-items-center text-center pt-5">
+<div class="container" data-aos="zoom-in">
+  <img src="profile.jpg" class="profile-pic mb-4">
+  <h1 class="display-4 fw-bold text-info">Tridev Sharma</h1>
+  <p class="text-muted fs-5">Computer Science Student · Web Developer</p>
+
+  <div class="status-wrap">
+    <a href="https://github.com/TridevSharma1" target="_blank" class="status-btn">
+      <i class="fa-brands fa-github"></i> GitHub
+    </a>
+    <a href="https://www.linkedin.com/in/tridevsharma1" target="_blank" class="status-btn">
+      <i class="fa-brands fa-linkedin"></i> LinkedIn
+    </a>
+  </div>
+
+  <div class="mt-4">
+    <a href="Tridev_Sharma_Resume.pdf" download class="download-btn">
+      <i class="fa-solid fa-download"></i>
+      Download Resume
+    </a>
+  </div>
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="container py-5">
+<div class="glass text-center" data-aos="fade-up">
+  <h3>Tech Stack</h3>
+  <span class="skill">HTML</span>
+  <span class="skill">CSS</span>
+  <span class="skill">Bootstrap</span>
+  <span class="skill">PHP</span>
+  <span class="skill">PostgreSQL</span>
+  <span class="skill">Python</span>
+  <span class="skill">Laravel</span>
+</div>
+</section>
+
+<!-- GITHUB ACTIVITY -->
+<section id="activity" class="container py-5 text-center">
+<h3 class="mb-4">GitHub Activity</h3>
+<div class="glass mb-4">
+  <img src="https://ghchart.rshah.org/38bdf8/TridevSharma1" class="img-fluid">
+</div>
+<div class="row g-4">
+  <div class="col-md-4"><div class="glass"><h4 id="repos">--</h4><p class="text-muted">Repos</p></div></div>
+  <div class="col-md-4"><div class="glass"><h4 id="followers">--</h4><p class="text-muted">Followers</p></div></div>
+  <div class="col-md-4"><div class="glass"><h4 id="following">--</h4><p class="text-muted">Following</p></div></div>
+</div>
+</section>
+
+<section id="projects" class="container py-5">
+<h3 class="text-center mb-4">Projects</h3>
+<div class="row g-4" id="projectsList"></div>
+</section>
+
+<section id="journey" class="container py-5">
+<h3 class="text-center mb-4">Journey</h3>
+<div class="glass timeline">
+  <div class="timeline-item"><h6>BCA</h6><p class="text-muted">Computer Applications</p></div>
+  <div class="timeline-item"><h6>Web Development</h6><p class="text-muted">HTML · CSS · PHP · Laravel</p></div>
+  <div class="timeline-item"><h6>Internship Ready</h6><p class="text-muted">Actively building</p></div>
+</div>
+</section>
+
+<footer class="text-center py-4 text-muted">
+<small>Designed & Built by Tridev Sharma · 2026</small>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+AOS.init({once:true});
+
+// GitHub stats
+fetch("https://api.github.com/users/TridevSharma1")
+.then(r=>r.json())
+.then(d=>{
+  repos.textContent=d.public_repos;
+  followers.textContent=d.followers;
+  following.textContent=d.following;
+});
+
+// Projects
+fetch("https://api.github.com/users/TridevSharma1/repos?sort=updated")
+.then(r=>r.json())
+.then(d=>{
+  d.slice(0,6).forEach(r=>{
+    projectsList.innerHTML+=`
+    <div class="col-md-4" data-aos="fade-up">
+      <div class="glass">
+        <h5>${r.name}</h5>
+        <p class="text-muted">${r.description||"No description"}</p>
+        <a href="${r.html_url}" target="_blank" class="text-info">View Code →</a>
+      </div>
+    </div>`;
+  });
+});
+</script>
+
+</body>
+</html>
