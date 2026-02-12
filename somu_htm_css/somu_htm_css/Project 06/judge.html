@@ -1,128 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Justice Website</title>
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Justice Landing Page</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
 <style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
 
-    body {
-        font-family: 'Segoe UI', sans-serif;
-        background-color: #2b2923;
-        color: white;
-        line-height: 1.6;
-    }
+body{
+    background:#2a2822;
+    color:#fff;
+}
 
-    .header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 20px 50px;
-        background-color: #2b2923;
-    }
+/* Navbar */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 80px;
+}
 
-    .logo {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        font-weight: bold;
-        font-size: 20px;
-        margin-left: 240px;
-    }
+.logo{
+    display:flex;
+    align-items:center;
+    font-size:22px;
+    font-weight:600;
+}
 
-    .logo img {
-        width: 100px;
-        height: 40px;
+.logo span{
+    margin-left:10px;
+}
 
-    }
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:40px;
+    align-items:center;
+}
 
-    nav a {
-        margin: 0 15px;
-        text-decoration: none;
-        color: white;
-    }
+.nav-links a{
+    text-decoration:none;
+    color:#ccc;
+    font-size:14px;
+    transition:0.3s;
+}
 
-    .get-started {
-        padding: 8px 16px;
-        background-color: transparent;
-        color: #f3d670;
-        border: 1px solid #f3d670;
-        border-radius: 6px;
-        font-weight: bold;
-        text-decoration: none;
-        margin-right: 240px;
-    }
+.nav-links a:hover{
+    color:#fff;
+}
 
-    .hero {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 50px;
-        align-items: center;
-    }
+.btn{
+    border:1px solid #d4af37;
+    padding:10px 20px;
+    border-radius:8px;
+    color:#d4af37;
+    font-size:14px;
+    text-decoration:none;
+    transition:0.3s;
+}
 
-    .hero-text {
-        flex: 1;
-        min-width: 300px;
-    }
+.btn:hover{
+    background:#d4af37;
+    color:#111;
+}
 
-    .hero-text h1 {
-        font-size: 48px;
-        font-weight: 800;
-        margin-left: 240px;
-    }
+/* Hero Section */
+.hero{
+    padding:60px 80px;
+}
 
-    .image {
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        min-width: 300px;
-    }
+.hero-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin-bottom:50px;
+}
 
-    .image img {
-        height: 450px;
-        align-items: center;
-    }
+.hero-left h1{
+    font-size:60px;
+    font-weight:800;
+    line-height:1.2;
+}
+
+.hero-right{
+    max-width:450px;
+    color:#ccc;
+    font-size:16px;
+    line-height:1.8;
+}
+
+.hero-image img{
+    width:100%;
+    border-radius:6px;
+}
 </style>
-
+</head>
 <body>
-    <header>
-        <div class="logo" style="margin-left: 200px;">
-            <img src="./assets/white-logo.png" alt="Logo">
-        </div>
-        <nav style="margin-left: 600px;">
-            <a href="./judge.html">Home</a>
-            <a href="#">Pricing</a>
-            <a href="#">Contact</a>
-            <a href="#">Terms and Conditions</a>
-            <a href="#" class="get-started" style="margin-left:100px ;">Get Started</a>
-        </nav>
-        
-    </header>
 
-    <main>
-        <section class="hero">
-            <div class="hero-text">
-                <h1>Your Justice Is<br>Our Top Priority</h1>
-            </div>
-            <div class="text" style="font-size: medium; margin-right:240px;">
-                <p>As a state of law, maintaining justice is</p>
-                <p>something that every citizen must pay</p>
-                <p>attention to, and we are here to uphold justice</p>
-                <p> for you</p>
-            </div>
-        </section>
-        <div class="image">
-            <img src="./assets/banner.png" alt="banner.png">
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">
+        <img src="./assets/white-logo.png" alt="">
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Terms and Conditions</a></li>
+        <li><a href="#" class="btn">Get Started</a></li>
+    </ul>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-top">
+        <div class="hero-left">
+            <h1>Your Justice Is<br>Our Top Priority</h1>
         </div>
-    </main>
+
+        <div class="hero-right">
+            <p>
+                As a state of law, maintaining justice is something that every
+                citizen must pay attention to, and we are here to uphold justice
+                for you.
+            </p>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <img src="./assets/banner.png" alt="Justice Image">
+    </div>
+</section>
+
 </body>
-
 </html>
