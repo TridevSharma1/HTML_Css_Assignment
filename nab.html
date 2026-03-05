@@ -1,20 +1,62 @@
-
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Tridev Sharma 1</title>
-  <style>
-    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; margin:0; padding:16px; }
-  </style>
-</head>
-<body>
-  <header><h1>Welcome</h1></header>
-  <main>
-    <p>Hello — this is a minimal HTML5 starter.</p>
-    <p>Hello — Tridev Sharma</p> 
-  </main>
-  <footer><small>© 2025</small></footer>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Project 4 | Product Landing</title>
+    <style>
+      body {
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+        margin: 0;
+        background: #fff7ed;
+        color: #431407;
+      }
+      .wrap {
+        max-width: 960px;
+        margin: 2rem auto;
+        padding: 1rem;
+      }
+      .hero {
+        background: linear-gradient(120deg, #fb923c, #f97316);
+        color: white;
+        padding: 2rem;
+        border-radius: 18px;
+      }
+      .cards {
+        margin-top: 1.5rem;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      }
+      .card {
+        background: #fff;
+        border-radius: 12px;
+        padding: 1rem;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <section class="hero">
+        <h1>Shopping Deals Hub</h1>
+        <p>Get top deals on electronics, fashion, and groceries in one place.</p>
+      </section>
+
+      <section class="cards">
+        <article class="card">
+          <h2>Electronics</h2>
+          <p>Up to 60% off on headphones, laptops, and smartwatches.</p>
+        </article>
+        <article class="card">
+          <h2>Fashion</h2>
+          <p>New arrivals from top brands with free delivery options.</p>
+        </article>
+        <article class="card">
+          <h2>Grocery</h2>
+          <p>Daily essentials delivered quickly at affordable prices.</p>
+        </article>
+      </section>
+    </main>
+  </body>
 </html>

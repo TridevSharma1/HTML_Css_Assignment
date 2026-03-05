@@ -1,40 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tridev Sharma</title>
-</head>
-<body>
-    <h1>Welcome</h1>
-    <h4>Hi Everyone</h4>
-    <tridev>My Self Tridev Sharma</tridev>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 1 | HTML Basics</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #f4f8ff;
+        color: #1f2937;
+      }
 
-    <ol>
-        <li>
-            <p>Apple</p>
-            <p1>Gun</p1>
-        </li>
-    </ol>
+      .container {
+        max-width: 900px;
+        margin: 2rem auto;
+        background: #fff;
+        border-radius: 16px;
+        padding: 2rem;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      }
 
-    <ul>
-        <li>
-            <p>Apple</p>
-            <p1>Gun</p1>
-        </li>
-    </ul>
-    <a
-      href="nab.html"
-      target="_blank"
-      >Flipkart</a>
-      <table>
-        <thead>
-            <th>Name</th>
-            <th>Class</th>
-            <th>Roll No</th>
-            <th>Contact no</th>
-        </thead>
-      </table>
+      h1,
+      h2 {
+        color: #1d4ed8;
+      }
 
-</body>
+      .grid {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        border: 1px solid #cbd5e1;
+        padding: 0.6rem;
+        text-align: left;
+      }
+
+      th {
+        background: #dbeafe;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 0.6rem 1rem;
+        border-radius: 10px;
+        background: #2563eb;
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .btn:hover {
+        background: #1e40af;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Welcome 👋</h1>
+      <p>Hi everyone! My name is <strong>Tridev Sharma</strong>. This is Project 1 for HTML basics.</p>
+
+      <div class="grid">
+        <section>
+          <h2>Top 3 Fruits (Ordered List)</h2>
+          <ol>
+            <li>Apple</li>
+            <li>Mango</li>
+            <li>Banana</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>My Hobbies (Unordered List)</h2>
+          <ul>
+            <li>Coding</li>
+            <li>Learning new technologies</li>
+            <li>Playing games</li>
+          </ul>
+        </section>
+      </div>
+
+      <section>
+        <h2>Student Details Table</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Class</th>
+              <th>Roll No</th>
+              <th>Contact No</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Tridev Sharma</td>
+              <td>BCA</td>
+              <td>21</td>
+              <td>9876543210</td>
+            </tr>
+            <tr>
+              <td>Aryan Kumar</td>
+              <td>BCA</td>
+              <td>22</td>
+              <td>9876500000</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <p>
+        <a class="btn" href="nab.html" target="_blank" rel="noopener noreferrer">Open Project 4</a>
+      </p>
+    </main>
+  </body>
 </html>
