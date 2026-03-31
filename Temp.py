@@ -1,4 +1,4 @@
-print("diwakar")
+print("Test")
 print("hello")
 print("welcome to python programming")
 # opprator
@@ -42,4 +42,6 @@ if is_palindrome(word):
     print(f"{word} is a palindrome.")
 else:
     print(f"{word} is not a palindrome.")
+
+print("End of the program")
 
