@@ -45,3 +45,18 @@ else:
 
 print("End of the program")
 
+# This code demonstrates basic Python programming concepts, including printing output, performing arithmetic operations, defining a class and its method, generating a Fibonacci sequence, and checking for palindromes. Each section of the code serves a specific purpose, showcasing different aspects of Python programming.
+
+print("This is the end of the code snippet.")
+# class Person:
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def display_info(self):
+        print(f"Name: {self.name}")
+        print(f"Age: {self.age}")
+person1 = Person("Alice", 30)
+person1.display_info()
