@@ -32,6 +32,3 @@ Assignment project demonstrating HTML and CSS concepts.
 └── images/
 ```
 
-## License
-
-MIT License
